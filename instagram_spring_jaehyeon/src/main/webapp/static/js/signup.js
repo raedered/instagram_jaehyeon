@@ -53,7 +53,7 @@ for (let i = 0; i < input_datas.length; i++) {
             if(i == 2) {
 				$.ajax({
 					type:"get",
-					url:"/app/auth/username/chack",
+					url:"/jaehyeon/auth/username/chack",
 					data: {
 						"username": input.value
 					},

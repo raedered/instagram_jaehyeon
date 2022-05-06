@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
-    <link rel="stylesheet" href="/app/static/css/account.css">
+    <link rel="stylesheet" href="/jaehyeon/static/css/account.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
@@ -20,12 +20,12 @@
             <div id="container">
                 <article>
                     <section class="side-bar">
-                        <a href="/app/profile/account">
+                        <a href="/jaehyeon/profile/account">
 	                        <div class="side-bar-item">
 	                            <h3>프로필 편집</h3>
 	                        </div>
                     	</a>
-                    	<a href="/app/profile/account/password">
+                    	<a href="/jaehyeon/profile/account/password">
 	                        <div class="side-bar-item clicked">
 	                            <h3>비밀번호 변경</h3>
 	                        </div>
@@ -59,7 +59,7 @@
                         <form class="profile-box-form1">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
-                                    <img src="/app/static/images/profile.PNG">
+                                    <img src="/jaehyeon/static/images/profile.PNG">
                                 </div>
                             </div>
                             <div class="box-item-right">

@@ -8,9 +8,9 @@ function load(){
 }
 
 bLogo.onclick = () => {
-	location.href = "/app/";
+	location.href = "/jaehyeon/";
 }
 
 profileImg.onclick = () => {
-	location.href = "/app/account/profile";
+	location.href = "/jaehyeon/account/profile";
 }

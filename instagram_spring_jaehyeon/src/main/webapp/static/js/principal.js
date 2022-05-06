@@ -2,7 +2,7 @@ function getPrincipal(){
 	let principal = null;
 	$.ajax({
 		type: "get",
-		url: "/app/api/principal",
+		url: "/jaehyeon/api/principal",
 		async: false,
 		dataType: "text",
 		success: function(data){
@@ -21,7 +21,7 @@ function getProfileImg(){
 	let imgUrl = null;
 	$.ajax({
 		type: "get",
-		url: "/app/api/profile/img",
+		url: "/jaehyeon/api/profile/img",
 		async: false,
 		dataType: "text",
 		success: function(data){

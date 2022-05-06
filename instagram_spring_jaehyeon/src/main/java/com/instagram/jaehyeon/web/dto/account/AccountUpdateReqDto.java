@@ -1,5 +1,7 @@
 package com.instagram.jaehyeon.web.dto.account;
 
+import com.instagram.jaehyeon.domain.profile.Account;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,14 +11,25 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class AccountResponseDto {
+public class AccountUpdateReqDto {
 	private int usercode;
 	private String username;
 	private String name;
-	private String email;
-	private String phone;
-	private String imgUrl;
 	private String website;
 	private String introduce;
+	private String email;
+	private String phone;
 	private int gender;
+	
+	public Account toEntity() {
+		return Account.builder()
+				.usercode(usercode)
+				.username(username)
+				.name(name)
+				.website(website)
+				.introduce(introduce)
+				.email(email)
+				.phone(phone)
+				.build();
+	}
 }

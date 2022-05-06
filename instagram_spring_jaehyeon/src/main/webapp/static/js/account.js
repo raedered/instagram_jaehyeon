@@ -16,7 +16,7 @@ load();
 function load(){
 	$.ajax({
 		type: "get",
-		url: "/app/profile/account/user",
+		url: "/jaehyeon/profile/account/user",
 		data: {
 			usercode : principal.usercode
 		},
@@ -50,7 +50,7 @@ submitBtn.onclick = () => {
 	account = createAccount();
 	$.ajax({
 		type: "put",
-		url: "/app/profile/account/update",
+		url: "/jaehyeon/profile/account/update",
 		data: JSON.stringify(account),
 		contentType: "application/json; charset=utf-8",
 		dataType: "text",
@@ -105,7 +105,7 @@ function imgChange() {
 				let formData = new FormData(document.querySelector(".profile-box-form1"));
 				$.ajax({
 					type: "post",
-					url: "/app/profile/account/update/img",
+					url: "/jaehyeon/profile/account/update/img",
 					data: formData,
 					encType: "multipart/form-data",
 					processData: false,			//multipart 사용할때는 encType,processData,contentType를 함께 사용해야한다.

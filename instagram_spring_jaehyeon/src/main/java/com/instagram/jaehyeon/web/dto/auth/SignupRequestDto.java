@@ -31,9 +31,9 @@ public class SignupRequestDto {
 		return User.builder()
 				.phone(phone)
 				.email(email)
-				.name(email)
+				.name(name)
 				.username(username)
-				.password(BCrypt.hashpw(password, getPassword()))
+				.password(BCrypt.hashpw(password, BCrypt.gensalt()))
 				.build();
 	}
 }
