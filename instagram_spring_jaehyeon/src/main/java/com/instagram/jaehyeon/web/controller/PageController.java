@@ -21,5 +21,10 @@ public class PageController {
 	public String getSignin() {
 		return "auth/signin";
 	}
+	
+	@RequestMapping(value = "/profile/account", method = RequestMethod.GET)
+	public String getAccount() {
+		return "profile/account/account";
+	}
 
 }
